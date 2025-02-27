@@ -7,7 +7,7 @@
 ## Installation und Ausführung
 
 Um die Webanwendung lokal zu starten, folge diesen Schritten:
-
+k
 1. **Node.js installieren**  
    Lade Node.js von [nodejs.org](https://nodejs.org/) herunter und installiere es, falls noch nicht geschehen.
 
