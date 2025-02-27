@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CO₂ Footprint Dashboard</title>
+  <!-- Bootstrap CSS über CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Eigene CSS-Datei für das helle, pastellfarbene Design -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 
+    ========================================================
+    HEADER-BEREICH mit fixiertem, verkleinerndem Header
+    ========================================================
+    Wir verwenden hier die Bootstrap Navbar-Komponente, allerdings mit der Klasse 
+    "navbar-expand-xl", sodass die Navigation erst bei Bildschirmen ab 1200px als voll
+    ausgeklapptes Menü erscheint. Auf kleineren Geräten (auch iPad in Querformat) wird 
+    das Hamburger-Dropdown genutzt.
+  -->
+  <header>  
+    <div class="header-left">
+      <img src="img/logo.png" alt="Logo" class="logo" />
+      <h1>&nbsp;</h1>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Startseite</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="navbar navbar-expand-xl navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      <!-- Navbar Brand mit Logo und Titel -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="Logo" class="logo me-2" />
+      </a>
+      <!-- Hamburger Toggler: Wird angezeigt, wenn der Viewport kleiner als xl ist -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#globalNavbar" aria-controls="globalNavbar" aria-expanded="false" aria-label="Navigation umschalten">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Globales Menü: Wird als Dropdown zusammengeklappt -->
+      <div class="collapse navbar-collapse" id="globalNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-xl-0 nav-list">
+          <li class="nav-item"><a href="#" class="nav-link">Start</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Unternehmen</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Länder</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Daten</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 
+    ========================================================
+    HAUPTBEREICH
+    Enthält die lokale Navigation und den Content-Bereich.
+    Wir haben hier einen fixierten Header, deshalb sorgt padding-top im Main-Container dafür,
+    dass der Inhalt nicht unter den Header gerät.
+  ========================================================
+  -->
+  <div class="main-container">
+    <!-- Linke Navigation: Auf Desktops sichtbar, wird auf kleinen Geräten (via Bootstrap Utility) ausgeblendet -->
+    <aside id="localNav" class="local-nav d-none d-md-block">
+      <ul>
+        <li><a href="#">Übersicht</a></li>
+        <li><a href="#">Berichte</a></li>
+        <li><a href="#">Statistiken</a></li>
+      </ul>
+    </aside>
+
+    <!-- Haupt-Content-Bereich -->
+    <main class="content">
+      <h2>CO2 Footprint Dashboard</h2>
+      <p>Hier werden die CO₂-Daten visualisiert und analysiert.</p>
+
+      <!-- Datenbereich: Tabelle mit CO₂-Emissionsdaten -->
+      <section id="dataSection">
+        <h3>&nbsp;</h3>
+        <input type="text" id="filterInput" placeholder="Suche nach Land oder Unternehmen..." />
+        
+        <!-- Tabelle mit CO₂-Daten -->
+        <table id="co2Table">
+          <thead>
+            <tr>
+              <th data-sort="land">Land</th>
+              <th data-sort="unternehmen">Unternehmen</th>
+              <th data-sort="emissionen">Emissionen (Tonnen)</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Dynamisch per JavaScript gefüllt -->
+          </tbody>
+        </table>
+
+        <!-- Div zur Anzeige des Gesamtausstoßes -->
+        <div id="co2Total" style="margin-top:10px; font-weight:bold;"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- 
+    ========================================================
+    FOOTER-BEREICH
+    ========================================================
+  -->
+  <footer>
+    <p>&copy; 2025 Fictional Non-Profit Organisation. <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+  </footer>
+
+  <!-- Einbindung der externen Skripte -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

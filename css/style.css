@@ -1,0 +1,233 @@
+/* Globaler Stil
+   Definiert grundlegende Schriftarten, Abstände und den sehr hellen Hintergrund der gesamten Website.
+   overflow-x: hidden verhindert horizontales Scrollen. */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #fcfdff !important; /* Sehr heller, fast weißer Hintergrund */
+  color: #333;
+}
+
+/* HEADER
+   Fixierter, weißer Header mit starkem Drop-Shadow als sichtbarem Rand. */
+header {
+  background-color: #ffffff !important;
+  padding: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3) !important; /* Deutlicher Schatten */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  transition: height 0.3s ease;
+}
+
+/* Header in verkleinerter Version beim Scrollen */
+header.header-small {
+  padding: 0.5rem !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+header.header-small .logo {
+  height: 40px !important;
+}
+
+/* GLOBALE NAVIGATION IM HEADER
+   Globale Navigation im fixierten Header; beim Hover wechselt die Schriftfarbe zu Dunkelblau (#0d47a1). */
+.header-nav .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header .nav-list .nav-link:hover {
+  color: #0d47a1 !important;
+}
+
+/* HAUPTKONTAINER
+   Enthält die lokale Navigation und den Content-Bereich. Padding-top verhindert, dass der fixierte Header
+   den darunterliegenden Inhalt überlappt. */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px !important;
+  padding-top: 80px; /* Platz für fixierten Header */
+  box-sizing: border-box;
+}
+
+/* LINKE NAVIGATION – GLOBALE Einstellungen
+   Entfernt Aufzählungszeichen (Bulletpoints) aus der lokalen Navigation. */
+.local-nav ul {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+/* LINKE NAVIGATION (Desktop)
+   Auf größeren Bildschirmen (min-width: 992px) wird die lokale Navigation als vertikale Leiste
+   im normalen Layoutfluss angezeigt und scrollt mit. */
+@media (min-width: 992px) {
+  .local-nav {
+    background-color: #e8f0fe !important;  /* Sehr helles Pastellblau */
+    padding: 1rem !important;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    position: relative !important; /* scrollt mit */
+    width: 15% !important;
+  }
+  .content {
+    width: 85% !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* LINKE NAVIGATION (Tablet & Smartphone)
+   Auf Bildschirmen unter 992px wird die lokale Navigation als horizontale Leiste direkt
+   unter dem fixierten Header angezeigt. */
+@media (max-width: 991px) {
+  .main-container {
+    flex-direction: column !important;
+    margin: 20px 10px !important;
+    padding-top: 80px !important;
+  }
+  .local-nav {
+    display: block !important;
+    width: 100% !important;
+    background-color: #e8f0fe !important;
+    padding: 0.5rem 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    position: relative !important;
+    margin-top: 0 !important; /* Kein zusätzlicher Abstand */
+  }
+  .local-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none !important;
+  }
+  .local-nav a {
+    padding: 8px !important;
+    margin-bottom: 0 !important;
+  }
+  .content {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 20px !important;
+  }
+}
+
+/* CONTENT-BEREICH
+   Der Content-Bereich hat einen sehr hellen, pastellgelben Hintergrund, abgerundete Ecken und einen
+   leichten Schatten. */
+.content {
+  padding: 1.5rem !important;
+  background-color: #fffef7 !important; /* Sehr helles Pastellgelb, fast weiß */
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+  margin-top: 20px !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content h2,
+.content h3 {
+  color: #0d47a1 !important; /* Dunkelblauer Farbton für Überschriften */
+}
+
+/* FILTER-EINGABEFELD
+   Das Filter-Eingabefeld ist hell und freundlich gestaltet. */
+#filterInput {
+  width: 100% !important;
+  padding: 10px !important;
+  border-radius: 4px !important;
+  border: 1px solid #ccc !important;
+  background-color: #f9f9f9 !important;
+  color: #333 !important;
+  margin-bottom: 1rem !important;
+}
+
+/* TABELLE
+   Die Tabelle ist in einem hellen Pastellstil gestaltet. Der Tabellenkopf hat einen
+   dunkel blau-grauen Hintergrund (#37474F) mit weißer Schrift, und die Zeilen wechseln abwechselnd
+   zwischen weiß und sehr hellem Blau. */
+#co2Table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin-top: 10px !important;
+  background-color: #ffffff !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+}
+
+#co2Table th {
+  background-color: #37474F !important; /* Dunkel blau-grau */
+  color: #ffffff !important;            /* Weiße Schrift */
+  padding: 10px !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+}
+
+#co2Table td {
+  padding: 10px !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+#co2Table tbody tr:nth-child(odd) {
+  background-color: #ffffff !important;
+}
+
+#co2Table tbody tr:nth-child(even) {
+  background-color: #e8f0fe !important;
+}
+
+#co2Table tbody tr:hover {
+  background-color: #d0e0ff !important;
+}
+
+/* FOOTER
+   Der Footer ist dezent, mit einem sehr hellen Hintergrund und hellgrauer Schrift. */
+footer {
+  text-align: center !important;
+  padding: 1rem !important;
+  background-color: #f8f8f8 !important;
+  color: #777 !important;
+  margin-top: 20px !important;
+  border-top: 1px solid #eee !important;
+}
+
+/* ZENTRIERUNG DER TABELLE AUF KLEINEN DISPLAYS
+   Auf kleineren Bildschirmen (unter 992px) soll die Tabelle zentriert dargestellt werden. */
+@media (max-width: 991px) {
+  #co2Table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

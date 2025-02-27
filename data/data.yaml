@@ -1,0 +1,121 @@
+entries:
+  - land: "Deutschland"
+    unternehmen: "Innovatis GmbH"
+    emissionen: 125000
+  - land: "Frankreich"
+    unternehmen: "TechNova SARL"
+    emissionen: 98000
+  - land: "USA"
+    unternehmen: "FutureCorp Inc."
+    emissionen: 210000
+  - land: "China"
+    unternehmen: "GlobalZen Industries"
+    emissionen: 360000
+  - land: "Indien"
+    unternehmen: "PrimeWave Solutions"
+    emissionen: 185000
+  - land: "Brasilien"
+    unternehmen: "EcoFusion Ltda."
+    emissionen: 145000
+  - land: "Vereinigtes Königreich"
+    unternehmen: "BrightBridge Ltd."
+    emissionen: 132000
+  - land: "Kanada"
+    unternehmen: "NorthernEdge Enterprises"
+    emissionen: 110000
+  - land: "Japan"
+    unternehmen: "Sakura Innovations"
+    emissionen: 190000
+  - land: "Australien"
+    unternehmen: "Outback Dynamics"
+    emissionen: 98000
+  - land: "Russland"
+    unternehmen: "PolarStar Technologies"
+    emissionen: 250000
+  - land: "Italien"
+    unternehmen: "BellaVita Industries"
+    emissionen: 115000
+  - land: "Deutschland"
+    unternehmen: "AlphaCore AG"
+    emissionen: 130000
+  - land: "Frankreich"
+    unternehmen: "Lumiere Solutions"
+    emissionen: 87000
+  - land: "USA"
+    unternehmen: "Pioneer Systems"
+    emissionen: 205000
+  - land: "China"
+    unternehmen: "DynamiX International"
+    emissionen: 370000
+  - land: "Indien"
+    unternehmen: "Visionary Tech Pvt. Ltd."
+    emissionen: 175000
+  - land: "Brasilien"
+    unternehmen: "Verde Energia"
+    emissionen: 150000
+  - land: "Vereinigtes Königreich"
+    unternehmen: "Sterling Innovations"
+    emissionen: 125000
+  - land: "Kanada"
+    unternehmen: "MapleLeaf Dynamics"
+    emissionen: 105000
+  - land: "Japan"
+    unternehmen: "Zenith Electronics"
+    emissionen: 195000
+  - land: "Australien"
+    unternehmen: "Southern Cross Solutions"
+    emissionen: 92000
+  - land: "Russland"
+    unternehmen: "UralTech Systems"
+    emissionen: 260000
+  - land: "Italien"
+    unternehmen: "Roma Creative Industries"
+    emissionen: 120000
+  - land: "Deutschland"
+    unternehmen: "TechStream AG"
+    emissionen: 135000
+  - land: "Frankreich"
+    unternehmen: "Ciel Innovations"
+    emissionen: 90000
+  - land: "USA"
+    unternehmen: "NexGen Technologies"
+    emissionen: 220000
+  - land: "China"
+    unternehmen: "DragonPeak Industries"
+    emissionen: 380000
+  - land: "Indien"
+    unternehmen: "QuantumLeap Systems"
+    emissionen: 170000
+  - land: "Brasilien"
+    unternehmen: "Samba Solutions"
+    emissionen: 155000
+  - land: "Vereinigtes Königreich"
+    unternehmen: "RegalTech Ltd."
+    emissionen: 128000
+  - land: "Kanada"
+    unternehmen: "Aurora Innovations"
+    emissionen: 108000
+  - land: "Japan"
+    unternehmen: "Nippon Nexus"
+    emissionen: 200000
+  - land: "Australien"
+    unternehmen: "Aussie FutureTech"
+    emissionen: 97000
+  - land: "Russland"
+    unternehmen: "Siberian Solutions"
+    emissionen: 255000
+  - land: "Italien"
+    unternehmen: "Milano Modern Industries"
+    emissionen: 118000
+  - land: "Deutschland"
+    unternehmen: "BluePeak Systems"
+    emissionen: 140000
+  - land: "Frankreich"
+    unternehmen: "Etoile Digital"
+    emissionen: 92000
+  - land: "USA"
+    unternehmen: "Vertex Innovations"
+    emissionen: 215000
+  - land: "China"
+    unternehmen: "Celestial Manufacturing"
+    emissionen: 365000
